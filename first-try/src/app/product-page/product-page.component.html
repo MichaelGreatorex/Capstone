@@ -1,0 +1,44 @@
+<app-not-found [visible]="!shirt" notFoundMessage="Sorry! The product you have searched is not available"
+resetLinkText="See our other great products!"
+>
+</app-not-found>
+
+<div *ngIf="shirt" class="container">
+  <img [src]="shirt.imageUrl" alt="shirt.name" />
+
+  <div class="details">
+
+    <div class="header">
+      <span class="name">
+        {{shirt.name}}
+      </span>
+    </div>
+
+    <div class="body">
+      <span class="description">
+        {{shirt.description}}
+      </span>
+    </div>
+
+    <div class="specs">
+      <span class="colour" *ngFor="let colour of shirt.colours">
+        {{colour}}
+      </span>
+      <span class="material">
+        {{shirt.material}}
+      </span>
+    </div>
+
+
+
+    <div class="price">
+      <span>{{shirt.price|currency:'GBP'}}</span>
+    </div>
+
+    <button (click)="addToCart()">Add to Cart</button>
+
+  </div>
+
+
+
+</div>

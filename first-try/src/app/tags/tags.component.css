@@ -1,0 +1,21 @@
+div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div a{
+  background-color: whitesmoke;
+  padding: .3rem 1rem;
+  margin: .2rem .15rem;
+  border-radius: 10rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: green;
+  opacity: .8;
+}
+
+div a:hover {
+  opacity: 1;
+  cursor: pointer;
+}

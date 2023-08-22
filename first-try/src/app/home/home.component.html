@@ -1,0 +1,33 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found [visible]="!shirts || shirts.length <= 0" resetLinkText="Search again"
+>
+</app-not-found>
+
+<ul>
+  <li *ngFor="let shirt of shirts">
+    <a routerLink="/product/{{shirt.id}}">
+      <img src="{{shirt.imageUrl}}" alt="">
+      <div class="content">
+        <div class="name">
+          {{shirt.name}}
+        </div>
+        <div class="price">
+          <span>
+            {{shirt.price|currency:'GBP'}}
+          </span>
+        </div>
+        <div class="product-item-footer">
+          <div class="colour">
+            <span *ngFor="let colour of shirt.colours">
+              {{colour}}
+            </span>
+            <div class="material">
+              {{shirt.material}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
