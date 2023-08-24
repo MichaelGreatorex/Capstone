@@ -21,9 +21,7 @@ export class MerchandiseService {
   }
   getAllTags():Tag[]{
     return [
-      { name: 'All', count: 5 },
-      { name: 'wywm', count: 5 },
-      { name: 'tshirt', count: 5 },
+
       { name: 'archetypes', count: 3 },
       { name: 'black', count: 2 },
       { name: 'green', count: 2 },
