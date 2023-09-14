@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?familyQuicksand&display=swap");
 
 *{
   box-sizing: border-box;
@@ -11,7 +10,7 @@ html{
 
 body{
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: sans-serif;
   font-size: 18px;
 }
 
